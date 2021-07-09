@@ -299,8 +299,5 @@ __pycache__/
 npm-debug.log* 
 yarn-debug.log* 
 yarn-error.log* 
-Momntz\.Api/wwwsrc/build/
-Momntz\.Api/dist
-/dist
-src/Momntz\.Api/ClientApp/build
-src/Momntz.Api/ClientApp/package-lock.json
+
+**/.vscode/

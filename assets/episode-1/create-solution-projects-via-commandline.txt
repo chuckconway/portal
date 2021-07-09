@@ -1,0 +1,32 @@
+dotnet new --list
+
+dotnet new sln --name Portal
+
+dotnet new xunit --name Portal.Tests --output Portal.Tests
+dotnet sln add ./Portal.Tests/Portal.Tests.csproj
+
+dotnet new blazorwasm --name Portal.Client -au IndividualB2C
+dotnet sln add ./Portal.Client/Portal.Client.csproj
+
+dotnet new webapi --name Portal.Api -au IndividualB2C
+dotnet sln add ./Portal.Api/Portal.Api.csproj
+
+dotnet new classlib --name Portal.Common
+dotnet sln add ./Portal.Common/Portal.Common.csproj
+
+dotnet new classlib --name Portal.Core
+dotnet sln add ./Portal.Core/Portal.Core.csproj
+
+dotnet new classlib --name Portal.Infrastructure
+dotnet sln add ./Portal.Infrastructure/Portal.Infrastructure.csproj
+
+# Git Commands
+git init
+git add -A
+git status
+git commit -m "This is my first commit"
+
+
+
+
+
